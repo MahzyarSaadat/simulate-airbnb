@@ -1,0 +1,142 @@
+body , html{
+  width: 100%;
+  height: 100%;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+==========
+Global-variable
+==========
+*/
+.section{
+  margin: 40px 80px;
+}
+
+/* 
+==========
+Navigation
+==========
+*/
+.nav--container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  box-shadow: 0px 10px 4px rgba(145, 145, 145, 0.301)
+}
+
+.nav--container img{
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+/* 
+==========
+Hero
+==========
+*/
+.hero--container{
+  display: flex;
+  flex-direction: column;
+}
+
+.heroImg--container{
+  min-width:200px;
+  align-self: center;
+}
+
+.hero--container img{
+  width: 100%;
+  height: 100%;
+}
+.hero--container h1{
+  font-size: 2.5em;
+  margin: 40px 0;
+}
+
+.hero--container p{
+  width: 500px;
+  font-size: 1.3em;
+}
+
+/* 
+==========
+Cart
+==========
+*/
+.cart--element{
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  background-color: #f5f6fa;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.cart--img{
+  max-height: 65%;
+}
+
+.cart--img img{
+  width: 100%;
+  height: 100%;
+}
+
+.cart--details{
+  margin-left: 4px;
+}
+
+.cart--details .title{
+  text-overflow: ellipsis;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.cart--details p{
+  margin: 15px 0;
+}
+
+.cart-states{
+  display: flex;
+  align-items: center;
+}
+
+.card--badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+/* 
+==========
+Pages-HomePage
+==========
+*/
+.homePage--container{
+  width: 100%;
+  height: 100%;
+}
+
+.carts--container{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
